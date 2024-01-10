@@ -23,6 +23,7 @@ Welcome to Stellar Grades, your ultimate platform for effortlessly calculating y
 
 ![screenshot-1704894770763](https://github.com/jonnelmlique/StellarGrades/assets/145328042/aaaf9d52-31aa-4773-96e1-21663805968b)
 
+
 ![screenshot-1704894743905](https://github.com/jonnelmlique/StellarGrades/assets/145328042/89e88962-e850-40a2-99ac-c998b0057cfa)
 
 ## Why Stellar Grades?
