@@ -18,6 +18,11 @@ Welcome to Stellar Grades, your ultimate platform for effortlessly calculating y
 2. Select your rounding method (rounded or not rounded).
 3. Click "Calculate GWA" to get instant results.
 
+## Images
+![screenshot-1704894559221](https://github.com/jonnelmlique/StellarGrades/assets/145328042/1c07ec1c-3587-4243-97a9-184da29156b6)
+![screenshot-1704894770763](https://github.com/jonnelmlique/StellarGrades/assets/145328042/aaaf9d52-31aa-4773-96e1-21663805968b)
+![screenshot-1704894743905](https://github.com/jonnelmlique/StellarGrades/assets/145328042/89e88962-e850-40a2-99ac-c998b0057cfa)
+
 ## Why Stellar Grades?
 
 We believe in empowering students to excel academically by providing them with the tools they need. Our goal is to make academic calculations transparent, accessible, and user-friendly.
