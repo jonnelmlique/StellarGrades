@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar Grades - Learn More</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">STELLAR GRADES</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container mt-5">
+        <div class="card about-card">
+            <div class="card-body">
+                <h2 class="card-title text-center mb-4">Learn More</h2>
+    
+                <p class="lead">This code calculates the Grade Weighted Average (GWA) based on the grades and units entered for different subjects. Let's break down the code step by step:</p>
+    
+                <!-- Code Explanation -->
+                <div class="card code-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Code Explanation</h5>
+                        <pre class="code-pre">
+                            <code class="language-javascript">
+                                // Rounding Option Retrieval:
+                                const roundingOption = document.getElementById('rounding').value;
+    
+                                // Subject Iteration:
+                                const subjects = document.querySelectorAll('.subject');
+    
+                                // Initializing Variables:
+                                let totalPoints = 0;
+                                let totalUnits = 0;
+    
+                                // Looping Through Subjects:
+                                subjects.forEach(subject => {
+                                    // Extracting Grade and Units:
+                                    const grade = parseFloat(subject.querySelector('.grade').value) || 0;
+                                    const units = parseFloat(subject.querySelector('.units').value) || 0;
+    
+                                    // Accumulating Total Points and Units:
+                                    totalPoints += grade * units;
+                                    totalUnits += units;
+                                });
+    
+                                // Calculating GWA:
+                                let gwa = totalPoints / totalUnits;
+    
+                                // Rounding GWA (Optional):
+                                if (roundingOption === 'rounded') {
+                                    gwa = gwa.toFixed(2);
+                                }
+    
+                                // Displaying Result:
+                                const resultElement = document.getElementById('result');
+                                resultElement.textContent = `Your GWA is: ${gwa}`;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center mt-auto">
+        <div class="container">
+            <p>&copy; 2024 Stellar Grades | 
+                <a href="https://github.com/your-username" target="_blank">
+                    <img src="/Images/Github.png" alt="GitHub Logo" height="20" width="20">
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
