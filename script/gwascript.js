@@ -4,16 +4,16 @@ function addSubject() {
     newSubject.className = 'row mb-3 subject';
 
     newSubject.innerHTML = `
-        <div class="col">
-            <label for="subjectName" class="form-label">Subject Name:</label>
+    <div class="mb-3 subjects">
+    <label for="subjectName" class="form-label">Subject Name:</label>
             <input type="text" class="form-control subjectName" placeholder="e.g., Math">
         </div>
-        <div class="col">
-            <label for="grade" class="form-label">Grade:</label>
+        <div class="mb-3 subjects">
+        <label for="grade" class="form-label">Grade:</label>
             <input type="text" class="form-control grade" placeholder="e.g., 1.5">
         </div>
-        <div class="col">
-            <label for="units" class="form-label">Units:</label>
+        <div class="mb-3 subjects">
+        <label for="units" class="form-label">Units:</label>
             <input type="text" class="form-control units" placeholder="e.g., 3">
         </div>
         <div class="col-auto my-auto ml-2">

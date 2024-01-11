@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stellar Grades - Home</title>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 </head>
@@ -32,7 +32,7 @@
 </nav>
 
     <div class="container mt-5">
-        <div class="calculator">
+        <div class="calculator p-4">
             <h1 class="mb-4 text-center">GWA CALCULATOR</h1>
             <div id="subjects-container">
                 <div class="alert alert-primary" role="alert">
@@ -40,15 +40,15 @@
                   </div>
                 
                 <div class="row mb-3 subject">
-                    <div class="col">
+                    <div class="mb-3 subjects">
                         <label for="subjectName" class="form-label">Subject Name:</label>
                         <input type="text" class="form-control subjectName" placeholder="e.g., Math">
                     </div>
-                    <div class="col">
+                    <div class="mb-3 subjects">
                         <label for="grade" class="form-label">Grade:</label>
                         <input type="text" class="form-control grade" placeholder="e.g., 1.5">
                     </div>
-                    <div class="col">
+                    <div class="mb-3 subjects">
                         <label for="units" class="form-label">Units:</label>
                         <input type="text" class="form-control units" placeholder="e.g., 3">
                     </div>
@@ -103,7 +103,7 @@
     <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <script src="script.js"></script>
+    <script src="./script/gwascript.js"></script>
 </body>
 
 </html>
